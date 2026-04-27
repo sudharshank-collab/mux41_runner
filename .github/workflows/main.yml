@@ -1,4 +1,4 @@
-name: MUX41 CI
+name: mux41 CI
 on: push
 jobs:
   test:
