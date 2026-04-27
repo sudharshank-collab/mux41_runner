@@ -10,7 +10,7 @@ module mux41 (
 );
 
 
-assign out = sel[1] ? (sel[0] ? d : c) : (sel[0] ? b : a)
+    assign out = sel[1] ? (sel[0] ? d : c) : (sel[0] ? b : a);
 
 endmodule
 //laefiy
