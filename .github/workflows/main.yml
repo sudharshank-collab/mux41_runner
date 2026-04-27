@@ -1,0 +1,11 @@
+name: MUX41 CI
+on: push
+jobs:
+  test:
+    runs-on: self-hosted
+    steps:
+      - uses: actions/checkout@v4
+      - run: pwd
+      - run: ls
+      - run: unset VERILATOR_ROOT && verilator -Wall --binary --trace mux41.v mux41_tb.v
+      - run: ./obj_dir/Vmux41
