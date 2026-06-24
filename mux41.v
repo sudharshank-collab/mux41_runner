@@ -9,7 +9,7 @@ module mux41 (
     output [3:0] out  
 );
 
-
+ 
     assign out = sel[1] ? (sel[0] ? d : c) : (sel[0] ? b : a);
 
 endmodule
