@@ -1,10 +1,14 @@
 name: mux41 CI
-on: push
+
+on:
+  push:
+  schedule:
+    - cron: '30 4 * * *'
+
 jobs:
   test:
     runs-on: self-hosted
+
     steps:
       - uses: actions/checkout@v4
-      - run: pwd
-      - run: ls
       - run: unset VERILATOR_ROOT && make
