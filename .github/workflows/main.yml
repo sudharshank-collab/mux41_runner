@@ -3,7 +3,7 @@ name: mux41 CI
 on:
   push:
   schedule:
-    - cron: '2 7 * * *'
+    - cron: '*/5 * * * *'
 
 jobs:
   test:
